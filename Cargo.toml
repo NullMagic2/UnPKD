@@ -1,0 +1,20 @@
+[package]
+name = "unpkd"
+version = "0.1.0"
+edition = "2021"
+description = "UnPKd — a GUI tool to detect and decompress PKLite-compressed DOS EXE/COM files"
+license = "MIT"
+build = "build.rs"
+
+[dependencies]
+wxdragon = "0.9"
+
+[target.'cfg(windows)'.build-dependencies]
+winresource = "0.1"
+embed-manifest = "1.4"
+
+[profile.release]
+opt-level = 3       # maximum optimization
+lto = true          # link-time optimization (smaller + faster binary)
+strip = true        # strip debug symbols (much smaller .exe)
+codegen-units = 1   # better optimization at cost of compile time

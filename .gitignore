@@ -1,0 +1,17 @@
+# Build output
+/target/
+/release/
+
+# Cargo lock (optional for binaries — keep it if you want reproducible builds)
+# Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

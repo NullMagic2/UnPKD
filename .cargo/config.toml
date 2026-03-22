@@ -1,0 +1,4 @@
+[env]
+# Point bindgen to your LLVM installation so wxdragon-sys can generate FFI bindings.
+# Adjust this path if LLVM is installed elsewhere on your system.
+LIBCLANG_PATH = "C:\\Program Files\\LLVM\\bin"
